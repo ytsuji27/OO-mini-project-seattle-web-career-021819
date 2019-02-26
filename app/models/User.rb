@@ -63,7 +63,7 @@ class User
     empty_array = []
     self.allergens.each do |allergen_ingredient|
       Recipe.all.each do |recipe|
-         if !recipe.ingredients.include?(allergen_ingredient)
+        if !recipe.ingredients.include?(allergen_ingredient)
           empty_array << recipe
         end
       end
